@@ -51,13 +51,10 @@ def isPrime(n):
     k = 500
     while k > 0:
         # This is to be taken (n - 3)
-<<<<<<< HEAD
         # This is done because in other languages like C++, java, c etc.
         # random function is not able to generate integers in required range,
         # so it may generate 0 also, and we want a as :
         # 1 < a < (n - 1) so this is done to set the random a in range
-=======
->>>>>>> origin/master
         a = 2 + random.randint(0, 922337203685477580) % (n - 3)
         if gcd(n, a) != 1:
             return "Composite"
