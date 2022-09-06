@@ -32,7 +32,7 @@ def Rabin_Karp(t, p):
         # The starting char removed
         if s < n - m:
             hashValueOfText = hashValueOfText - (ord(t[s]) * (10 ** (m - 1)))
-        # Adding of the char
+            # Adding of the char
             hashValueOfText = hashValueOfText * 10
             hashValueOfText = hashValueOfText + ord(t[s + m])
 
