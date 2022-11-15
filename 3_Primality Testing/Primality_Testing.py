@@ -11,7 +11,7 @@ def power(a, n, p):
     #         |------------ > (a ^ 2) ^ (b / 2)     , {if b is even}
     # Now application of modular arithmetic because,
     # {(a + b) % n} = [{(a % n) + (b % n)} % n]
-    # {(a * b) % n} = [{(a % n) + (b * n)} % n]
+    # {(a * b) % n} = [{(a % n) * (b % n)} % n]
     # And also to save from overflow situation and compress the result (In java, c++, c etc)
     res = 1
     # If a >= p so to make it in range
